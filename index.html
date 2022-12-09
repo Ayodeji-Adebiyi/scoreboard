@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-con">
+                <div class = "left-con">
+                    <h3>HOME</h3>
+                    <h4 id = "home-count-el">0</h4>
+                    <div id = "btn-con">
+                        <button class = "btn" id = "home-1" onClick = "homeAddOne()">+1</button>
+                        <button class = "btn" id = "home-2" onClick = "homeAddTwo()">+2</button>
+                        <button class = "btn" id = "home-3" onClick = "homeAddThree()">+3</button>
+                    </div>
+                </div>
+                <div class = "right-con">
+                    <h3>GUEST</h3>
+                    <div id = "count-con">
+                        <h4 id = "guest-count-el">0</h4>
+                    </div>
+                    <div id = "btn-con">
+                        <button class = "btn" id = "guest-1" onClick = "guestAddOne()">+1</button>
+                        <button class = "btn" id = "guest-2" onClick = "guestAddTwo()">+2</button>
+                        <button class = "btn" id = "guest-3" onClick = "guestAddThree()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-con">
+                <button id = "reset-el" onClick = "reset()">RESET</button>
+                <button id = "reset-el" onClick = "save()">SAVE</button>
+            </div>
+            <h4 id = "save-summary">Score(s): </h4>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
